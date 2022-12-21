@@ -19,9 +19,14 @@ import com.example.jetpackcompose_todoapp.util.Action
 
 @Composable
 fun TaskTopAppBar(
+    selectedTask: TodoTask?,
     navigateToListScreen: (Action) -> Unit
 ) {
-    NewTaskAppBar(navigateToListScreen = navigateToListScreen)
+    if (selectedTask == null) {
+        NewTaskAppBar(navigateToListScreen = navigateToListScreen)
+    } else {
+        ExitingTaskAppBar(selectedTask = selectedTask, navigateToListScreen = navigateToListScreen)
+    }
 }
 
 @Composable
@@ -147,6 +152,6 @@ fun NewTaskBarPreview() {
 @Preview(showBackground = true)
 fun ExitingTaskAppBarPreview() {
     ExitingTaskAppBar(
-        selectedTask = TodoTask(0, "Task Title", "Task Description", Priority.HIGH ),
+        selectedTask = TodoTask(0, "Task Title", "Task Description", Priority.HIGH),
         navigateToListScreen = {})
 }
