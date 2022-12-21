@@ -10,4 +10,7 @@
     <string name="search_icon">Search Icon</string>
     <string name="empty_content_image">Empty Content Image</string>
     <string name="empty_content_text">No Tasks Found.</string>
+    <string name="back_button">Back Button</string>
+    <string name="delete_icon">Delete Icon</string>
+    <string name="update_icon">Update Icon</string>
 </resources>
