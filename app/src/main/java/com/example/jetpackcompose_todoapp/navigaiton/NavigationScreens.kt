@@ -1,6 +1,5 @@
 package com.example.jetpackcompose_todoapp.navigaiton
 
-import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import com.example.jetpackcompose_todoapp.util.Action
 import com.example.jetpackcompose_todoapp.util.Constants

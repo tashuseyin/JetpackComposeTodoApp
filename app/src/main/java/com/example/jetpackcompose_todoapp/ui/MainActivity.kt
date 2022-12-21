@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
+import androidx.compose.material.ExperimentalMaterialApi
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.jetpackcompose_todoapp.navigaiton.SetupNavigationComponent
@@ -11,6 +12,7 @@ import com.example.jetpackcompose_todoapp.ui.theme.JetpackComposeTodoAppTheme
 import com.example.jetpackcompose_todoapp.ui.viewmodel.SharedViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
+@ExperimentalMaterialApi
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     private lateinit var navController: NavHostController
